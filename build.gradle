@@ -19,7 +19,7 @@ dependencies {
     testImplementation 'com.codeborne:selenide:5.19.0'
     testImplementation 'io.rest-assured:rest-assured:4.3.3'
     testImplementation 'com.google.code.gson:gson:2.8.6'
-    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
 }
 
 test {
