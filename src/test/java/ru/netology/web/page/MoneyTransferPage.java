@@ -33,8 +33,6 @@ public class MoneyTransferPage {
     }
 
     public DashBoardPage waitingError() {
-        $("#root").shouldBe(Condition.visible, Duration.ofSeconds(15));
-        $("#root").shouldHave(Condition.exactText("Ошибка"));
-        return new DashBoardPage();
+        errorNotification.shouldHave(Condition.exactText("Ошибка"));
     }
 }
