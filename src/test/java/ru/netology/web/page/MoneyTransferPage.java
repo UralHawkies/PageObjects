@@ -32,7 +32,7 @@ public class MoneyTransferPage {
         return new DashBoardPage();
     }
 
-    public DashBoardPage waitingError() {
+    public void waitingError() {
         errorNotification.shouldHave(Condition.exactText("Ошибка"));
     }
 }
